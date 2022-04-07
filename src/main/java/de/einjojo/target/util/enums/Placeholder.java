@@ -1,4 +1,4 @@
-package de.einjojo.target.util;
+package de.einjojo.target.util.enums;
 
 public enum Placeholder {
     PLAYER("%player%"),

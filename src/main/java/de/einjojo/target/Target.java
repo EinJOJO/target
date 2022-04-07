@@ -5,11 +5,10 @@ import de.einjojo.target.listener.PlayerJoinListener;
 import de.einjojo.target.listener.PlayerQuitListener;
 import de.einjojo.target.manager.GameManager;
 import de.einjojo.target.util.Messages;
-import de.einjojo.target.util.Placeholder;
+import de.einjojo.target.util.enums.Placeholder;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.w3c.dom.css.RGBColor;
 
 public final class Target extends JavaPlugin {
 

@@ -3,8 +3,8 @@ package de.einjojo.target.listener;
 import de.einjojo.target.Target;
 import de.einjojo.target.manager.GameManager;
 
-import de.einjojo.target.model.GamePlayer;
-import de.einjojo.target.util.Placeholder;
+import de.einjojo.target.util.enums.Items;
+import de.einjojo.target.util.enums.Placeholder;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -37,6 +37,9 @@ public class PlayerJoinListener implements Listener {
 
 
     private void giveLobbyItems (Player player) {
-
+        player.getInventory().clear();
+        player.getInventory().setItem(1, Items.Voter.getItemStack());
+        player.getInventory().setItem(4, Items.EXPLAINER.getItemStack());
+        player.getInventory().setItem(7, Items.LEAVE.getItemStack());
     }
 }
