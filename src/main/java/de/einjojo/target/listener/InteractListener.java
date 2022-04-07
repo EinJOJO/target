@@ -16,6 +16,7 @@ public class InteractListener implements Listener {
     public InteractListener() {
         this.plugin = Target.getInstance();
         this.gameManager = this.plugin.getGameManager();
+        this.plugin.getServer().getPluginManager().registerEvents(this, this.plugin);
     }
 
 
