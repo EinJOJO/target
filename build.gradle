@@ -36,6 +36,12 @@ tasks.withType(JavaCompile).configureEach {
         options.release = targetJavaVersion
     }
 }
+task moveToServer {
+    copy {
+        from 'build/libs/' + rootProject.name + '-' + version + '.jar'
+        into "E:/workspace/Minecraft/Testserver/1.18.2 Paper/plugins"
+    }
+}
 
 processResources {
     def props = [version: version]
