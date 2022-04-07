@@ -1,5 +1,8 @@
 package de.einjojo.target;
 
+import de.einjojo.target.listener.InteractListener;
+import de.einjojo.target.listener.PlayerJoinListener;
+import de.einjojo.target.listener.PlayerQuitListener;
 import de.einjojo.target.manager.GameManager;
 import de.einjojo.target.util.Messages;
 import de.einjojo.target.util.Placeholder;
@@ -31,11 +34,19 @@ public final class Target extends JavaPlugin {
     @Override
     public void onEnable() {
         gameManager = new GameManager();
+        registerListeners();
     }
 
     @Override
     public void onDisable() {
 
+    }
+
+
+    private void registerListeners() {
+        new InteractListener();
+        new PlayerQuitListener();
+        new PlayerJoinListener();
     }
 
     private String getPrefixString() {

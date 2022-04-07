@@ -45,10 +45,9 @@ public class Messages {
         setMessage(s, config, "prefix", "&7[&eTarget&7] &8»");
         setMessage(s, config, "player_join", "%prefix% &e%player% hat das Spiel &abetreten");
         setMessage(s, config, "player_leave", "%prefix% &e%player% hat das Spiel §cverlassen");
-        setMessage(s, config, "", "");
-        setMessage(s, config, "", "");
-        setMessage(s, config, "", "");
-        setMessage(s, config, "", "");
+        setMessage(s, config, "lobby_full", "&7Kaufe &6Premium &7lol. &cIch bin voll");
+        addLine(s, "");
+        addLine(s, "");
 
 
         try {
