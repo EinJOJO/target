@@ -40,11 +40,12 @@ public class Messages {
         addLine(s, "# Developed by EinJOJO (https://github.com/EinJOJO/)");
         addLine(s, "# 07.04.22");
         addLine(s, "# Developed for Florian / Kaktussucht.net");
+        addLine(s, "# If you have issues with the message file changing characters, use -Dfile.encoding=UTF-8 in your JVM Start arguments");
         addLine(s,"");
         addLine(s, "");
         setMessage(s, config, "prefix", "&7[&eTarget&7] &8»");
         setMessage(s, config, "player_join", "%prefix% &e%player% hat das Spiel &abetreten");
-        setMessage(s, config, "player_leave", "%prefix% &e%player% hat das Spiel §cverlassen");
+        setMessage(s, config, "player_leave", "%prefix% &e%player% hat das Spiel &cverlassen");
         setMessage(s, config, "lobby_full", "&7Kaufe &6Premium &7lol. &cIch bin voll");
         addLine(s, "");
         addLine(s, "");
