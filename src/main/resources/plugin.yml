@@ -1,0 +1,8 @@
+name: Target
+version: '${version}'
+main: de.einjojo.target.Target
+api-version: 1.18
+prefix: GAME
+authors: [ EinJOJO ]
+description: Gamemode
+website: einjojo.it
