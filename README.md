@@ -14,7 +14,7 @@
 
 ### Then you will find...
 
-* the **BuildSystem** plugin jar `BuildSystem-<identifier>` in **buildsystem-core/build/libs**
+* the **Target** plugin jar `Target-<Version>` in **/build/libs**
 
 ### Other commands
 
